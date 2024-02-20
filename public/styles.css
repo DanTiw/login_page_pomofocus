@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+  }
+  
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-weight: 300;
+    background: #172627;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    --b: 2px; /* thickness of the border */
+    --c: #20cd8d; /* color of the border */
+    --w: 150px; /* width of border */
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background: conic-gradient(
+          from 90deg at top var(--b) left var(--b),
+          var(--_g)
+        )
+        0 0 / var(--_p),
+      conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+        var(--_p),
+      conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
+        var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+        100% 100% / var(--_p);
+    margin: 10% auto;
+    padding: 80px 0;
+    text-align: center;
+  
+    width: 300px;
+  }
+  
+  .container h2 {
+    color: #20cd8d;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  form {
+    padding: 20px 0;
+    position: relative;
+  }
+  form input {
+    border: 1px solid #172627;
+    background-color: #172627;
+    width: 150px;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #20cd8d;
+    font-weight: 300;
+  }
+  
+  form button {
+    appearance: none;
+    outline: 0;
+    background-color: #172627;
+    border: 0;
+    padding: 10px 15px;
+    color: #20cd8d;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 20px;
+  }
+  
